@@ -1,0 +1,26 @@
+#navbar{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar > div{
+    display: flex;
+    text-decoration: none;
+    gap: 20px;
+}
+#navbar >div>a>h4{
+    text-decoration: none;
+    color: white;
+}
+.image{
+    width: 300px;
+    height: 300px;
+    max-width:100%;   
+}
+.mobile{
+    width: 500px;
+    height: 500px;
+    /* display: flex; */
+    border: 1px solid rgb(159, 158, 158);
+}

@@ -1,0 +1,53 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+align-items: center;
+    height: 50px;
+    margin-bottom: 35px;
+}
+.nav >a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+table {
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+  }
+  table td,
+  table th {
+    padding: 8px;
+    text-align: center;
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+  }
+  table tr:nth-child(even) {
+    background-color: rgb(168, 187, 239);
+  }
+  table tr:nth-child(even):hover {
+    background-color: #c9cfd6;
+  }
+  table tr:nth-child(odd):hover {
+    background-color: #e3e8ed;
+  }
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #2b619e;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+  }
+
+  #agesortacsend,#agesortdesend,#datesortacsend,#datesortdesend{
+    width: 150px;
+    height: auto;
+    background-color: black;
+    color: white;
+  }

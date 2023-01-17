@@ -1,0 +1,202 @@
+.mainom{
+  
+     /* position: absolute; */
+   
+display: flex;
+flex-direction: column;
+    height: auto;
+width: 100%;
+left: 0px;
+top: 1090px;
+z-index: 35px;
+background-color:#f5f6fc;
+
+}
+.vivendobox{
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-self: flex-start;
+    justify-content: flex-start;
+    
+width: 100%;
+left: 486px;
+top: 1132px;
+color: black;
+margin: 60px 485px 29px 486px;
+
+}
+.vivendoboxletter{
+    font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 56px;
+line-height: 64px;
+
+
+text-align: center;
+
+
+
+color: #000000;
+}
+
+.para{
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-self: flex-start;
+    justify-content: flex-start;
+    
+width: 100%;
+margin: 0px 435px 36px 435px;
+/* border: 1px solid red; */
+justify-content: flex-start;
+
+}
+.paraletter{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+
+text-align: center;
+
+
+
+color: #000000;
+
+}
+.hstacks{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid; */
+}
+
+
+
+
+
+.boxbox{
+    height: 416px;
+width: 370px;
+margin: 0px 30px 79px 135px;
+background-color: #FFFFFF;
+/* margin-top: 0px; */
+
+}
+.shape1{
+    margin: 63px 119px 54px 152px ;
+}
+.head{
+    height: 32px;
+width: 162px;
+
+margin: 0px 145px 15px 63px;
+
+}
+.headletter{
+    font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+
+color: #000000;
+
+}
+.paras{
+    height: 48px;
+width: 306px;
+margin: 0px 1px 25px 65px;
+
+}
+.parasletter{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: rgba(0, 0, 0, 0.5);
+
+mix-blend-mode: normal;
+}
+.rect{
+    height: 1px;
+width: 300px;
+
+border-radius: 0px;
+margin: 0px 33px 0px 65px;
+
+
+background: #000000;
+}
+.learn{
+    height: 24px;
+width: 88px;
+
+    margin:18px 217px 24px 65px;
+
+}
+.learnletter{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+
+color: #000000;
+
+}
+.boxbox1{
+    height: 416px;
+    /* border: 1px solid; */
+
+width: 370px;
+margin: 0px 30px 80px 0px;
+background-color: #FFFFFF;
+
+}
+.boxbox2{
+    height: 416px;
+    /* border: 1px solid; */
+
+width: 370px;
+margin: 0px 135px 80px 0px;
+background-color: #FFFFFF;
+
+}
+
+
+
+.shape2{
+    margin: 73px 100px 48px 84px ;
+}
+.shape3{
+    margin: 58px 105px 48px 121px ;
+}
+
+@media (max-width:950px){
+    .vivendobox{
+        margin: 60px auto 29px auto;
+
+    }
+    .para{
+        margin: 0px auto 36px auto;
+
+    }
+    .HStackbox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+    .hstacks{
+        display: flex;
+        flex-direction: column;
+        
+        /* position: static; */
+    }
+}

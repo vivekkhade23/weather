@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./booking.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <a href="./index.html">Registration Page</a>
+        <a href="./dashboard.html">Dashboard Page</a>
+        <a href="#">Booking Page</a>
+    </nav>
+
+
+    <select  id="filter">
+        <option value="">filterbySeat</option>
+        <option value="">showall</option>
+        <option value="AC First Class">AC First Class</option>
+        <option value="Sleeper Class">Sleeper Class</option>
+        <option value="Second Class">Second Class</option>
+        <option value="General">General</option>
+    </select>
+
+    
+<button id="agesortacsend">Sort By Age acsending</button>
+<button id="agesortdesend">Sort By Age desending</button>
+
+
+
+<button id="datesortacsend">Sort By acsending journey Date</button>
+<button id="datesortdesend">Sort By desending journey Date</button>
+
+    <table>
+    <thead>
+        <tr>
+          <th>User ID</th>
+          <th>Name</th>
+          <th>Age</th>   
+          <th>Location</th>
+          <th>Destination </th>
+          <th>Date</th>
+          <th> Seat-Type</th>
+        
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Append booked users row here  -->
+  
+       
+      </tbody>
+    </table>
+
+
+</body>
+
+<script src="./booking.js"></script>
+
+</html>

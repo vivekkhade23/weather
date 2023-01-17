@@ -1,0 +1,30 @@
+.incorrect{
+padding: 5px;
+width: 300px;
+background: none;
+}
+.incorrect{
+    background-color: red;
+    color: red;
+
+}
+.incorrectans{
+    background-color: blue;
+    color: blue;
+    padding: 5px;
+width: 300px;
+
+}
+.correct{
+    padding: 5px;
+    width: 300px;
+}
+.correctans{
+    padding: 5px;
+    width: 300px;
+    background-color: greenyellow;
+}
+
+.correct:hover{
+    background-color: yellowgreen;
+}

@@ -1,0 +1,186 @@
+.mainbox{
+    height: 100%;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+border-radius: 0px;
+color: #000000;
+background-color:#f5f6fc;
+
+}
+.display1{
+    /* border: 1px solid red; */
+    height: 718px;
+width: 100%;
+padding: 0px;
+
+
+}
+.imageback{
+    margin: 75px;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("https://www.shihoriobata.com/wp-content/uploads/2020/12/aesthetic-background-thumbnail.jpg") ;
+}
+
+
+.display{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.homerologo{
+    margin: 127px 578px 21px 35px;
+    
+}
+.homerologoletter{
+    height: 24px;
+    width: 127px;
+    display: flex;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    
+    
+    color: #000000;
+    
+    
+}
+.heading{
+    height: 128px;
+    width: 411px;
+    display: flex;
+    justify-content: flex-start;
+    
+    margin: 0px 227px 29px 35px;
+    
+    
+}
+.headingletter{
+   
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-self: flex-start;
+    font-size: 56px;
+    line-height: 64px;
+    color: #000000;
+}
+.parahome{
+    height: 83px;
+width: 100%;
+ /* border: 1px solid red; */
+ display: flex;
+ justify-content: flex-start;
+margin: 0px 135px 33px 35px;
+
+
+}
+.parahomeletter{
+    display: flex;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;    
+    color: #000000;
+    
+}
+@media(max-width:1000){
+    .mainbox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.shape{
+    height: 39px;
+width: 41px;
+left: 735px;
+top: 2197px;
+border-radius: 0px;
+margin: 23px 23px 3.5px 35px;
+
+}
+.shape1{
+    /* background: linear-gradient(225deg, #FFC105 0%, #737CFF 100%); */
+}
+.text{
+    height: 24px;
+width: 216px;
+margin: 33px 425px 12px 0px;
+}
+
+
+
+.buttonbox{
+    box-sizing: border-box;
+display: flex;
+    position: absolute;
+    justify-content: center;
+    height: 48px;
+    width: 170px;
+    left: 1135px;
+    top: 16px;
+       background-color: #434CCC;
+
+    border-radius: 0px;
+   text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+.buttonletter{
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    /* position: absolute; */
+height: 24px;
+left: 33.24%;
+right: 33.24%;
+top: calc(50% - 24px/2 + 1px);
+    
+}
+.buttonbox1{
+    box-sizing: border-box;
+display: flex;
+    position: absolute;
+    justify-content: center;
+    height: 48px;
+    width: 170px;
+    left: 1135px;
+    top: 16px;
+       color: #434CCC;
+
+    border-radius: 0px;
+   text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+.buttonletter1{
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+   background-color: #FFFFFF;
+    position: absolute;
+height: 24px;
+left: 33.24%;
+right: 33.24%;
+top: calc(50% - 24px/2 + 1px);
+    
+}

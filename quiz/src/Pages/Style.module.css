@@ -1,0 +1,25 @@
+.formbox{
+    padding: 75px;
+    background-color:  #7ec5a3;
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 25px;
+    
+}
+.box{
+    margin: 35px;
+}
+.buttonstart{
+    background-color: #5c737e ;
+    color: white;
+    width: 100%;
+}
+.selectbox{
+    background-color: #5c737e ;
+    
+}
+.colorbox{
+    background-color: #5c737e ;
+    color: white;
+}

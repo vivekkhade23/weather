@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <style>
+      /* Write all necessery css here  */
+        .nav{
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        justify-content: space-around;
+      }
+      #cart-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 25px;
+}
+      .div{
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 15px;
+  align-items: center;
+}
+.img{
+  width: 100%;
+  height: 50%;
+}
+.smalldiv{
+  display: flex;
+  height: 25px;
+  align-self: center;
+  gap: 10px;
+}
+.qty{
+  margin-top: 0px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Masai E-Commerce</h1>
+      <a href="./index.html">Home</a>
+      <a href="./cart.html">Cart</a>
+    </div>
+    <h1 id="total">Your Total cart Price is:- <span id="cart-total">0</span></h1>
+    <div id="cart-container">
+      <!-- Here Append All the cart Products  -->
+
+    </div>
+  </body>
+  <script>
+    // Write all necessery JS here 
+let cart =JSON.parse(localStorage.getItem("cart"))||[];
+
+cartrender(cart)
+
+
+function cartrender(data){
+  cartcontainer=document.querySelector("#cart-container");
+  cartcontainer.innerText="";
+  let tot=document.querySelector("#cart-total");
+  let total=0;
+for(let i=0;i<data.length;i++){
+  
+  let div=document.createElement("div");
+  let img=document.createElement("img");
+  let name=document.createElement("h3");
+  let price=document.createElement("h4");
+  let des=document.createElement("p");
+  let type=document.createElement("h4");
+  let incbtn=document.createElement("button");
+  let qty=document.createElement("h4");
+  let decbtn=document.createElement("button");
+  let removebtn=document.createElement("button");
+  let divsmall=document.createElement("div");
+
+  div.setAttribute("class","div")
+img.setAttribute("class","img")
+divsmall.setAttribute("class","smalldiv")
+qty.setAttribute("class","qty")
+
+
+  
+img.src=data[i].img;
+name.innerText=data[i].brand;
+price.innerText=data[i].price;
+des.innerText=data[i].details;
+type.innerText=`Catogory:- ${data[i].category}`;
+removebtn.innerText="Remove";
+incbtn.innerText="+";
+decbtn.innerText="-";
+qty.innerText=1;
+
+total=total+(+price.innerText);
+
+
+let p=+price.innerText
+
+incbtn.addEventListener("click",()=>increment(qty,p,total))
+decbtn.addEventListener("click",()=>decrement(qty,p,total))
+removebtn.addEventListener("click",()=>removeitem(data[i].id))
+
+
+function increment(qty,price,total){
+
+let num=qty.innerText;
+num=+num;
+console.log(typeof(total),price,total)
+num=num+1;
+qty.innerText=num
+// qty=num;
+total=total+p;
+console.log(total)
+return total
+// totalpriceinc(price,total)
+
+}
+
+
+function decrement(qty,price,total){
+
+  let num=qty.innerText;
+num=+num;
+console.log(typeof(num),num,price)
+num=num-1;
+
+if(num>0){
+qty.innerText=num;
+total=total-p;
+
+// totalpricedec(price,total)
+}
+}
+
+function removeitem(id){
+  let cartitems=JSON.parse(localStorage.getItem("cart"));
+cartitems=cartitems.filter((el)=>{return el.id!==id})
+console.log(cartitems)
+cartrender(cartitems)
+localStorage.setItem("cart",JSON.stringify(cartitems))
+
+}
+
+
+
+
+divsmall.append(incbtn,qty,decbtn,removebtn)
+div.append(img,name,price,des,type,divsmall);
+cartcontainer.append(div)
+
+}
+tot.append(total)
+
+
+
+}
+function totalpriceinc(p,totalprice){
+  totalprice=totalprice+p;
+  let tot=document.querySelector("#cart-total");
+tot.innerText='';
+  tot.append(totalprice)
+
+}
+function totalpricedec(p,totalprice){
+  totalprice=totalprice-p;
+  let tot=document.querySelector("#cart-total");
+tot.innerText=''
+  tot.append(totalprice)
+}
+
+
+  </script>
+</html>

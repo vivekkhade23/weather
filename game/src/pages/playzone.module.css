@@ -1,0 +1,28 @@
+.randombox{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 50px;
+    width: 750px;
+    height: 50px;
+    margin: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 75px;
+}
+
+.keyboard{
+   padding: 50px;
+   background-color: black;
+   /* color: white; */
+   display: flex;
+   align-self: center;
+   justify-self: center;
+   justify-content: center;
+   width: 80%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.keyboardButton{
+    background-color: rgb(28, 3, 3);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    color: black;
+}

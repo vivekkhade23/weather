@@ -1,0 +1,272 @@
+.header{
+    background-color: black;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 135px;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.headtext{
+    margin-left: -135px;
+}
+.header{
+    display: flex;
+}
+.list{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+.list>a{
+    text-decoration: none;
+color: white;
+align-items: center;
+
+}
+.btn{
+    background-color: white;
+    color: black;
+    height: 39px;
+}
+
+
+
+.hero{
+display: flex;
+justify-content: center;
+flex-direction: row;
+width: 90%;
+margin-left: 100px;
+}
+.lefthero{
+
+    width: 47%;
+    margin-left: 4rem;
+}
+.lefthero p{
+ font-weight: 100;
+ line-height: 16px;
+ font-size: 20px;
+ 
+}
+.righthero{
+
+    width: 47%;
+}
+.righthero img{
+    height: 500px;
+}
+
+@media (max-width: 950px) {
+    .hero{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+  
+    
+        }
+
+}
+.grid{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto;
+    gap:4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+}
+.grid p{
+    font-size: 18px;
+    line-height: 26px;
+  
+}
+@media (max-width: 950px) {
+    .grid{
+        margin-top: -12rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:auto;
+        gap:4rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    
+    }
+}
+@media (max-width: 550px) {
+    .grid{
+        margin-top: -12rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:auto;
+        gap:4rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    
+    }
+}
+.ourRooms{
+    text-align: center;
+}
+.ourRooms p{
+    color:orange;
+}
+.gridrooms{
+    display: flex;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:auto;
+    gap: 10px;
+
+}
+.gridrooms img{
+    height: 400px;
+    width:100%;
+
+}
+.imgDiv{
+  
+    position: relative;
+    
+}
+.imgDiv>h1{
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    color: white;
+}
+.imgDiv>h3{
+    position: absolute;
+    bottom: 35px;
+    left: 10px;
+    color: white;
+}
+
+@media (max-width: 950px) {
+    .gridrooms{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    
+    }
+}
+@media (max-width: 550px) {
+    .gridrooms{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    
+    }  
+}
+
+
+
+.maingallery{
+    display: flex;
+    margin: auto;
+    justify-content:space-around;
+    
+    gap: 45px;
+}
+.viewgal{
+    background-color: orange;
+    height: 3rem;
+    width: 10rem;
+    color: white;
+    border: 0px solid ;
+}
+.gallaryleft{
+   
+    margin-left: 3rem;
+}
+.gallaryleft p{
+  
+    color: orange;
+}
+.gallaryright{
+   
+    margin-right: 3rem;
+    font-size: 18px;
+    width: 60%;
+    
+}
+.blog{
+    width: 80%;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: auto;
+}
+.blogimg{
+    width: 390px;
+}
+
+.blogbtn{
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    border: none;
+
+}
+@media (max-width: 950px) {
+    .blog{
+        width: 80%;
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+}
+@media (max-width: 550px) {
+    .blog{
+        width: 80%;
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+}
+
+
+.footer{
+    background-color: black;
+    justify-content: center;
+    color: #737a7f;
+    padding: auto;
+    padding-top: 35px;
+    
+}
+.footdiv1{
+   
+    justify-content: center;
+    gap: 55px;
+    display: flex;
+    align-items: center;
+}
+.footdiv1>div>img{
+    height: 36px;
+}
+.footdiv2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.quicklinklinks{
+    display: flex;
+    /* color: white; */
+}
+.footinput{
+    height: 35px;
+    border: none;
+}
+.footbtn{
+    height: 42px;
+    background-color: #f8d178;
+    color: white;
+    
+}
+.footdiv3{
+    display: flex;
+    justify-content: space-around;
+}

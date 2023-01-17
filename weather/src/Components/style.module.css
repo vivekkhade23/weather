@@ -1,0 +1,24 @@
+.hstack{
+   padding: 35px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+}
+.input{
+    /* border: 1px solid red; */
+    align-self: center;
+width: 85%;
+}
+.suggestions{
+    /* border: 1px solid red; */
+    box-shadow:'rgba(0, 0, 0, 0.24) 0px 3px 8px';
+    border-radius:10px;
+    width: 260px;
+overflow: auto;
+background-color: white;
+justify-content: center;
+position: absolute;
+margin-left: 25px;
+}

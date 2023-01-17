@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+align-items: center;
+    height: 50px;
+    margin-bottom: 35px;
+}
+.nav >a{
+    text-decoration: none;
+    color: white;
+
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+gap:10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#form >input{
+    width: 25%;
+}

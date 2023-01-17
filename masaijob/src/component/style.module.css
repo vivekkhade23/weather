@@ -1,0 +1,29 @@
+.mainbox{
+    display: flex;
+    border: 1px solid;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    justify-content: space-around;
+}
+.image{
+    width: 150px;
+    height: 150px;
+    border-radius: 180px;
+}
+.subbox{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.name{
+    color: #6badad;
+    font-size: large;
+    text-transform: capitalize;
+}
+.button{
+    background-color: #94ebeb;
+    color: #6badad;
+    margin: 5px;
+
+}

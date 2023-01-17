@@ -1,0 +1,259 @@
+.header{
+    /* background-image: url("https://s1.1zoom.me/big0/192/Norway_Rivers_Boats_Mountains_Sogge_More_og_524657_1280x755.jpg"); */
+
+    position: absolute;
+width: 1280px;
+height: 720px;
+left: 0px;
+top: 0px;
+/* width: 100%; */
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://s1.1zoom.me/big0/192/Norway_Rivers_Boats_Mountains_Sogge_More_og_524657_1280x720.jpg");
+
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 178px;
+    color: white;
+    position: absolute;
+    width: 1181px;
+    height: 60px;
+    left: 50px;
+    top: 19px;
+    
+}
+.brand{
+    
+    width: 148px;
+    height: 60px;
+    
+    
+    /* Inside auto layout */
+    /* border: 1px solid red; */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    }
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 0px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 148px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    width: 148px;
+height: 40px;
+
+/* Heading1 */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 33.18px;
+line-height: 120%;
+/* identical to box height, or 40px */
+
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.menu{
+    width: 606px;
+height: 49px;
+top: 5.5px;
+left: 326px;
+/* border: 1px solid red; */
+
+/* Inside auto layout */
+display: flex;
+flex: none;
+/* justify-content: space-around; */
+order: 1;
+flex-grow: 0;
+}
+.navlinkbox{
+  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 10px;
+    
+ 
+    width: 112px;
+    height: 49px;
+    left: 714px;
+    top: 5.5px;
+}
+
+.navlink{
+  
+
+/* Paragraph */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 180%;
+/* identical to box height, or 29px */
+
+   position: absolute;
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+    
+}
+.language{
+    height: 29px;
+width: 71px;
+left: 1110px;
+top: 15.5px;
+border-radius: 0px;
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+.emogi{
+    position: absolute;
+width: 18px;
+height: 18px;
+left: 1110px;
+top: 20.5px;
+}
+.vector1{
+    
+    position: absolute;
+    left: 2.81%;
+    right: 3.44%;
+    top: 3.12%;
+    bottom: 50%;
+    
+    background: #ED4C5C;
+    Width:16.88px;
+Height:8.44px
+}
+.vector2{
+    position: absolute;
+left: 2.81%;
+right: 3.44%;
+top: 50%;
+bottom: 3.12%;
+
+background: #F9F9F9;
+}
+.idbox{
+    position: absolute;
+width: 16px;
+color: #FFFFFF;
+height: 16px;
+left: 1165px;
+display: flex;
+top: 22.5px;
+}
+.id{
+    /* position: absolute; */
+width: 35px;
+height: 29px;
+/* left: 1138px; */
+top: 15.5px;
+/* border: 1px solid red; */
+align-self: center;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 180%;
+/* identical to box height, or 29px */
+
+
+color: #FFFFFF;
+}
+/* ************************hero */
+.heromain{
+    position: absolute;
+width: 780px;
+height: 286px;
+left: 250px;
+top: 217px;
+
+}
+.herotitle{
+    position: absolute;
+width: 701px;
+height: 154px;
+left: 280px;
+top: 217px;
+}
+.herosearch{
+    /* position: absolute; */
+    width: 780px;
+    height: 286px;
+    left: 250px;
+    top: 217px;
+    
+}
+.explore{
+    /* position: relative; */
+    width: 701px;
+    height: 57px;
+    left: 280px;
+    top: 217px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47.78px;
+    line-height: 120%;
+    /* or 57px */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+
+}
+.lorem{
+    /* position: absolute; */
+width: 686px;
+height: 87px;
+left: 295px;
+top: 284px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 180%;
+/* or 29px */
+
+text-align: center;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+}

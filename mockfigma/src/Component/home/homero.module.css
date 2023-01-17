@@ -1,0 +1,237 @@
+.homerobox{
+    height: auto;
+width: 100%;
+left: 0px;
+top: 304px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+border-radius: 0px;
+color: #000000;
+background-color:#f5f6fc;
+/* padding-top: 304px; */
+/* position: absolute; */
+}
+.display{
+    display: grid;
+    width: 100%;
+    
+}
+.homerologo{
+    margin: 127px 0px 0px 135px;
+    
+}
+.homerologoletter{
+    height: 24px;
+    width: 93px;
+    display: flex;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    
+    
+    color: #000000;
+    
+    
+}
+.heading{
+    height: 128px;
+    width: 411px;
+    display: flex;
+    justify-content: flex-start;
+    
+    margin: 21px 0px 20px 135px;
+    
+    
+}
+.headingletter{
+   
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-self: flex-start;
+    font-size: 56px;
+    line-height: 64px;
+    color: #000000;
+}
+.parahome{
+    height: 83px;
+width: 100%;
+ /* border: 1px solid red; */
+ display: flex;
+ justify-content: flex-start;
+margin: 9px 0px 30px 135px;
+
+
+}
+.parahomeletter{
+    display: flex;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;    
+    color: #000000;
+    
+}
+.boxone{
+   
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   justify-content: flex-start;
+    /* border: 1px solid blue; */
+    
+}
+.boxtwo{
+    padding: 0 0 0 135px;
+    /* border: 1px solid blue; */
+    width: 270px;
+}
+.plus295{
+    height: 48px;
+width: 86px;
+margin: 0px 0px 5px 135px;
+font-weight: 400;
+
+
+}
+.plus295letter{
+    font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+
+
+color: #000000;
+
+}
+.partem{
+    height: 24px;
+width: 114px;
+margin: 0px 0px 8px 135px;
+
+}
+.partemletter{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;    
+    color: #000000;
+    
+}
+
+.partempara{
+    height: 49px;
+width: 270px;
+
+margin: 0px 30px 192px 135px;
+
+}
+.partemparaletter{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: rgba(0, 0, 0, 0.5);
+
+mix-blend-mode: normal;
+
+}
+.plus1500{
+    height: 48px;
+width: 135px;
+
+margin: 0px 0px 5px 30px;
+
+}
+.plus295letter2{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    
+    color: #000000;
+    
+    opacity: 0.5;   
+}
+.partem2{
+    height: 24px;
+width: 121px;
+margin: 0px 0px 8px 30px;
+
+}
+.partemletter2{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+}
+.partempara2{
+    height: 49px;
+    width: 270px;
+   
+    margin: 0px 0px 192px 30px;
+       
+}
+.partemparaletter2{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+
+/* Text_Black_50% */
+
+color: rgba(0, 0, 0, 0.5);
+
+mix-blend-mode: normal;
+
+
+}
+.display2{
+    /* border: 1px solid red; */
+    height: 718px;
+width: 100%;
+padding: 0px;
+
+
+}
+.imageback{
+    margin: 75px;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: ; */
+    background-image:url("https://www.shihoriobata.com/wp-content/uploads/2020/12/aesthetic-background-thumbnail.jpg") ;
+}
+
+@media (max-width:1100px){
+.homerobox{
+    /* margin: auto; */
+    /* width: auto; */
+grid-template-columns: repeat(1,1fr);
+}
+.heading{
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+}
+}

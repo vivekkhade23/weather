@@ -1,0 +1,32 @@
+#navbar{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar > div{
+    display: flex;
+    text-decoration: none;
+    gap: 20px;
+}
+#navbar >div>a>h4{
+    text-decoration: none;
+    color: white;
+}
+#input_data{
+    gap: 25px;
+    /* border: 1px solid red; */
+    justify-self: center;
+}
+#mobile_form{
+    /* justify-content: center; */
+    align-items: center;
+display: flex;
+flex-direction: column;
+width: 400px;
+gap:25px
+}
+#button{
+    width: 100px;
+    align-self: center;
+}

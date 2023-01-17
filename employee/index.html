@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    title{
+      color: #2b619e;
+    }
+    div {
+  display: flex;
+  justify-content: space-around;
+}
+form {
+  /* margin: 0 auto; */
+  margin-top: 15px;
+  width: 30%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 30px;
+  margin-left: 20px;
+}
+label {
+  font-size: 20px;
+}
+table {
+  width: 60%;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+table td,
+table th {
+  padding: 8px;
+  text-align: center;
+  font-family: sans-serif;
+  /* border: 1px solid red; */
+}
+table tr:nth-child(even) {
+  background-color: rgb(168, 187, 239);
+}
+table tr:nth-child(even):hover {
+  background-color: #c9cfd6;
+}
+table tr:nth-child(odd):hover {
+  background-color: #e3e8ed;
+}
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #2b619e;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+#filter{
+  width: 20%;
+  padding: 12px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  resize: vertical;
+  
+  border: 1px solid rgb(190, 179, 179); 
+}
+* {
+  box-sizing: border-box;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  resize: vertical;
+  border: 1px solid rgb(190, 179, 179);
+}
+
+input[type="submit"] {
+  background-color: #2b619e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+}
+input[type="submit"]:hover {
+  background-color: #5b8cc3;
+}
+h1 {
+  /* font-weight: bolder; */
+  text-align: center;
+  font-size: 45px;
+  color: #2b619e;
+  text-decoration: underline;
+  text-transform: uppercase;
+  /* //font-family: "Gill Sans", sans-serif; */
+  font-family: "Lucida Console", Courier, monospace;
+}
+.redbtn {
+  cursor: pointer;
+}
+  </style>
+  <head>
+    <title style="color: #2b619e">Masai Employee Records</title>
+  </head>
+  <body>
+    
+    <!-- Use this form for taking the inputs  -->
+    <form>
+      <input placeholder="Name" type="text" id="name" />
+      <input placeholder="Employee ID" type="text" id="employee_id" />
+      <select id="department">
+        <option value="">Select Department</option>
+        <option value="HR">HR</option>
+        <option value="Finance">Finance</option>
+        <option value="Engineering">Engineering</option>
+      </select>
+      <input placeholder="Experience" type="number" id="experience" />
+      <input placeholder="Email" type="email" id="email" />
+      <input placeholder="Mobile No." type="number" id="mobile" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!-- Use this select tag for filtering  -->
+    <select id="filter">
+      <option value="">Select Department</option>
+      <option value="HR">HR</option>
+      <option value="Finance">Finance</option>
+      <option value="Engineering">Engineering</option>
+    </select>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Employee ID</th>
+          <th>Department</th>
+          <th>Experience in Years</th>
+          <th>Email</th>
+          <th>Mobile No</th>
+          <th>Role</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody >
+        <!-- Append Rows here using JS & DOM  -->
+       
+      </tbody>
+    </table>
+  </body>
+  <script>
+   document.querySelector("form").addEventListener("submit",form)
+// let box=[]  
+
+function form(e){
+  e.preventDefault();
+
+  let name=document.querySelector("#name").value;
+  let id=document.querySelector("#employee_id").value;
+  let dep=document.querySelector("#department").value;
+  let  experience=document.querySelector("#experience").value;
+  let email=document.querySelector("#email").value;
+  let mobile=document.querySelector("#mobile").value;
+
+console.log(name,id,dep,experience,email,mobile)
+
+let tbody=document.querySelector("tbody");
+let tr=document.createElement("tr")
+let td1=document.createElement("td");
+td1.innerText=name;
+
+let td2=document.createElement("td");
+td2.innerText=id;
+
+
+let td3=document.createElement("td");
+td3.innerText=dep;
+
+let td4=document.createElement("td");
+td4.innerText=experience;
+
+
+let td5=document.createElement("td");
+td5.innerText=email;
+
+let td6=document.createElement("td");
+td6.innerText=mobile;
+let td7=document.createElement("td");
+// console.log("td4",td4,typeof(td4.innerText))
+
+experience=+experience;
+console.log(typeof(experience))
+if(experience>5){
+  td7.innerText="Senior"
+}
+else if(experience>=2&&experience<=5){
+  td7.innerText="Junior";
+
+}
+else{
+  td7.innerText="Fresher";
+
+}
+
+
+let td8=document.createElement("td");
+td8.innerText="Delete";
+
+td8.addEventListener("click", removeFunction);
+  function removeFunction() {
+    event.preventDefault();
+    tr.parentNode.removeChild(tr);
+  }
+
+tr.append(td1,td2,td3,td4,td5,td6,td7,td8)
+tbody.append(tr)
+
+
+let filter=document.querySelector("#filter").value;
+document.querySelector("#filter").addEventListener("change",()=>filtering(filter,box))
+function filtering(filter,box){
+  document.querySelector("tbody").innerText=null;
+
+
+}
+
+
+}
+
+
+
+
+
+  </script>
+</html>

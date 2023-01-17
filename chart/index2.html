@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="remove">removeData</button>
+    <canvas id="myChart" width="400px" height="400px"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="text/javascript">
+
+var ctx,chart;
+
+
+    window.addEventListener("load",function(){
+       ctx = document.getElementById('myChart');
+  chart= new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Januarry', 'February', 'March', 'April', 'May', 'June','July'],
+      datasets: [{
+        label: 'attendance',
+        data: [100, 40, 60, 80, 67, 70,80],
+      
+        backgroundColor:["#f8c596"]
+      }
+      ,{
+        label: 'Performance',
+        data: [80, 55, 55, 90, 57, 76,80],
+      backgroundColor:[
+        "red"
+      ]
+      
+    }],
+    borderWidth: 1,
+},
+})
+})
+
+document.getElementById("remove").addEventListener("click",()=>removeData(chart))
+
+function removeData(chart) {
+    chart.data.labels.pop();
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.pop();
+    });
+    chart.update();
+}
+
+</script>
+</body>
+</html>

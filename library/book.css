@@ -1,0 +1,10 @@
+.div{
+    display: flex;
+    border: 1px solid;
+}
+.div >div{
+    display: block;
+    /* flex-direction: column; */
+    font-size: large;
+    font-weight: 600;
+}

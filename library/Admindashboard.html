@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table,button {
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+  }
+  table td,
+  table th ,
+  table button{
+    padding: 8px;
+    text-align: center;
+    font-family: sans-serif;
+    
+  }
+  table tr:nth-child(even) {
+    background-color: rgb(168, 187, 239);
+  }
+  table tr:nth-child(even):hover {
+    background-color: #c9cfd6;
+  }
+  table tr:nth-child(odd):hover {
+    background-color: #e3e8ed;
+  }
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #2b619e;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .edit{
+    background-color: brown;
+    border: none;
+    width: 100%;
+    color: white;
+  }
+  .delete{
+    background-color: red;
+    border: none;
+    width: 100%;
+    color: white;
+  }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <form id="formdata">
+    <input type="url" id="url" placeholder="Enter Image Url">
+    <input type="text" id="book" placeholder="Enter Name of Book">
+    <input type="text"id="author" placeholder="Enter Author of Book">
+    <select  id="genre">
+<option >GENRE</option>
+<option value="Science">Science</option>
+<option value="Fiction">Fiction</option>
+<option value="History">History</option>
+<option value="Tech">Tech</option>
+<option value="Business">Business</option>
+    </select>
+   <select  id="year">
+        <option >YEAR</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+    </select>
+    <input type="text" id="publisher" placeholder="Enter publisher name">
+    <input type="number" id="cost" placeholder="Enter Cost of Book">
+    <input type="submit" placeholder="Submit">
+   </form>
+
+<br>
+<div style="display: flex;">
+<table>
+    <thead>
+      <tr>
+        <th>Book Cover Image</th>
+        <th>Name of the book</th>
+        <th>Author of the book</th>
+        <th>Genre</th>
+        <th>Edition</th>
+        <th>Publisher</th>
+        <th>Cost</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="tbody1" >
+      <!-- Append Rows here using JS & DOM  -->
+     
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>USERNAME</th>
+        <th>EMAIL</th>
+        <th>Password</th>
+    </tr>
+</thead>
+<tbody id="tbody3">
+  <!-- Append Rows here using JS & DOM  -->
+ 
+</tbody>
+</table>
+</div>
+</body>
+<script src="./Admindashboard.js">
+  
+ 
+</script>
+</html>

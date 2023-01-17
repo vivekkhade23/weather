@@ -1,0 +1,10 @@
+
+export  const SET_AUTH="SET_AUTH";
+export const SET_CURRENT_USER="SET_CURRENT_USER";
+export const SET_ALL_USERS="SET_ALL_USERS";
+export const GET_ALL_TICKETS="GET_ALL_TICKETS";
+export const GET_CURRENT_TICKET="GET_CURRENT_TICKET";
+export const SET_BOOKMARK="SET_BOOKMARK";
+
+
+

@@ -1,0 +1,104 @@
+.mainbox{
+    height: 80px;
+width: 100%;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+/* position: absolute; */
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 98.7%;
+
+background: #434CCC;
+}
+.navlogo{
+  
+    position: absolute;
+    padding-top: 16px;
+    padding-left: 135px;
+    padding-bottom: 16px;
+    padding-right: 1203px;
+
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+color: #FFFFFF;
+}
+.menubar{
+    position: absolute;
+ padding: 28px  345px 28px 771px  ;
+border-radius: nullpx;
+
+
+font-style: normal;
+font-family: 'DM Sans';
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+
+text-align: right;
+
+
+color: #FFFFFF;
+}
+.buttonbox{
+    box-sizing: border-box;
+display: flex;
+    position: absolute;
+    justify-content: center;
+    height: 48px;
+    width: 170px;
+    left: 1135px;
+    top: 16px;
+       background-color: #434CCC;
+
+    border-radius: 0px;
+   text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+.buttonletter{
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+height: 24px;
+left: 33.24%;
+right: 33.24%;
+top: calc(50% - 24px/2 + 1px);
+    
+}
+.checkbtn{
+    float: right;
+    line-height: 85px;
+    width: 20px;
+    height: 14px;
+    margin: 24px 15px 26px 340px;
+    color: #FFFFFF;
+    display: none;
+    margin-left: 80px;
+}
+@media(max-width:1100px){
+    .checkbtn{
+        display: flex;
+    }
+    .menubar{
+        display: none;
+    }
+    .buttonletter{
+        display: none;
+    }
+    .buttonbox{
+        display: none;
+    }
+    .menutext{
+        display: none;
+    }
+}
